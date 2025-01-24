@@ -1,0 +1,27 @@
+{
+  "name": "cypress",
+  "version": "2.0.0",
+  "description": "Cucumber Framework",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "ehsun",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "cypress": "^13.11.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/HomeOfficeTest/*.feature"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.6",
+    "@cypress/browsify-preprocessor":"latest"
+  }
+}
